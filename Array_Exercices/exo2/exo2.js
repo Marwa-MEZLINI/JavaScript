@@ -9,10 +9,12 @@ console.log(countries, webTechs)
 
 //(2)
 let text = 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
-let newText = text.replace(/,./g, " ")
-/* (let _newText = newText.replace(/./g,"")*/
-
+let newText = text.replace(/,/g, " ")
 console.log(newText)
+newText = newText.replace(/\./g," ")
+let _newText = newText
+console.log(_newText)
+
 
 let words = newText.split(" ")
 console.log(words)

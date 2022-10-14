@@ -6,14 +6,15 @@ const webTechs = ['HTML','CSS','JavaScript','React','Redux','Node','MongoDB']
 
 //(3)
 let len = webTechs.length
+console.log(len)
 
 //(4)
 let first = webTechs[0] , middle = webTechs[3] , last = webTechs[webTechs.length-1]
-
+console.log(first , middle , last)
 //(5)
-const mixedDataTypes =['name','age','games','techs','sisters','trips','lucky-number']
+const mixedDataTypes =['name',25, 5.9 ,'techs',3 ,'trips','lucky-number']
 let size = mixedDataTypes.length
-
+console.log(size)
 //(6)
 let itCompanies = ['Facebook','Google','Microsoft','Apple','IBM','Oracle','Amazon']
 
@@ -42,8 +43,8 @@ console.log(itCompanies[6].toUpperCase())
 console.log(itCompanies.toString())
 
 //(13)
-if (itCompanies.includes('IBM'))
-    {console.log('IBM')}
+if (itCompanies.includes('Sass'))
+    {console.log('Sass')}
 else
     console.log('not found')
 
@@ -72,7 +73,7 @@ console.log(itCompanies.slice(3,4))
 
 //(20)
 console.log(itCompanies.splice(0,1))
-
+console.log(itCompanies)
 //(21)
 console.log(itCompanies.splice(2,1))
 
@@ -81,3 +82,4 @@ console.log(itCompanies.splice(4,1))
 
 //(23)
 console.log(itCompanies.splice(0,6))
+console.log(itCompanies)

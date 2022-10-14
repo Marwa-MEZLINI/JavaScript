@@ -40,13 +40,29 @@ else
 console.log('greater than')
 
 //(2)
+const _countries = [
+    'Albania',
+    'Bolivia',
+    'Canada',
+    'Denmark',
+    'Ethiopia',
+    'Finland',
+    'Germany',
+    'Hungary',
+    'Ireland',
+    'Japan',
+    'Kenya'
+]
 console.log(_countries)
 console.log(_countries.slice(0,10))
 
 console.log(_countries[(_countries.length -1)/ 2])
 
 //(3)
-if (_countries.length % 2)
-    console.log(_countries.slice(0, _countries.length/2))
+console.log(_countries.length)
+if (_countries.length % 2 == 0)
+{console.log('0')
+    console.log(_countries.slice(0, _countries.length/2))}
 else 
-console.log(_countries.slice(0, (_countries.length + 1)/2))
+{console.log(_countries.slice(0, (_countries.length + 1)/2))
+console.log('1')}
