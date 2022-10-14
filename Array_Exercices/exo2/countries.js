@@ -1,4 +1,4 @@
-/*
+
 export const countries = [
     'Albania',
     'Bolvania',
@@ -11,4 +11,4 @@ export const countries = [
     'Ireland',
     'Japan',
     'Kenya'
-]*/
+]

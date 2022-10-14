@@ -1,5 +1,5 @@
-const webTechs= []
-export default webTechs = [
+
+export const webTechs = [
     'HTML',
     'CSS',
     'JavaScript',
