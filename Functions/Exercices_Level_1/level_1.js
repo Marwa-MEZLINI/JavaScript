@@ -53,12 +53,12 @@ function areaOfCircle(π,r){
 console.log(areaOfCircle(3.14,10))
 
 //(8)
-function circumOfCircle(π,r){
-    let circumference = 2*π *r
+function circumOfCircle(r){
+    let circumference = 2* Math.PI *r
     return circumference
 }
 
-console.log(circumOfCircle(3.14,10))
+console.log(circumOfCircle(10))
 
 //(9)
 const density = (mass,volume) => {
