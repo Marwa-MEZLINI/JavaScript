@@ -123,3 +123,48 @@ const sum = numbersArray.reduce(
 console.log(sum);
 
 //(18)
+var countriesToString = countries.reduce((prevVal,currVal,idx)=>{
+    return idx == 0 ? currVal : prevVal + ', ' + currVal + '';
+}, '')
+countriesToString = setCharAt(countriesToString,(countriesToString.length - 8),'and ')
+function setCharAt(str,index,chr) {
+    if(index > str.length-1) return str;
+    return str.substring(0,index) + chr + str.substring(index+1);
+}
+console.log(countriesToString , 'are north European countries');
+
+//(19)
+/*every() is used to check if all the elements are similar in one aspect while some() is
+used to check if some of the elements are similar in one aspect (atleast one element fullfills the condition).
+Both returns boolean.*/
+
+//(20)
+const greaterThan7 = names.some((name) => name.length > 7 ) 
+console.log(greaterThan7)
+
+//(21)
+const countriesWithLand = countries.every((country) => country.includes('land'))
+console.log(countriesWithLand);
+
+//(22)
+/**
+ * find() is used to find and return the first element that satisfies the condition while 
+ findIndex() is used to find and return the position of the first element that satisfies
+ the condition
+ */
+
+//(23)
+const countryWith6Char = countries.find((country) => (country.length) == 6 )
+console.log(countryWith6Char);
+
+//(23)
+const _countryWith6Char = countries.findIndex((country) => (country.length) == 6 )
+console.log(_countryWith6Char);
+
+//(24)
+const country1 = countries.findIndex((country) => (country === 'Norway' ))
+console.log(country1);
+
+//(25)
+const country2 = countries.findIndex((country) => (country === 'Russia' ))
+console.log(country2);
