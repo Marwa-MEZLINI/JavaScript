@@ -50,3 +50,10 @@ return countries.slice(0,10)
 }
 
 console.log(getFirstCountries())
+
+//(6)
+function getLastCountries(){
+  return countries.slice((countries.length - 10))
+}
+
+console.log(getLastCountries());
