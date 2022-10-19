@@ -44,3 +44,9 @@ function letterNumber(){
 
 console.log(letterNumber())
 
+//(5)
+function getFirstCountries(){
+return countries.slice(0,10)
+}
+
+console.log(getFirstCountries())
