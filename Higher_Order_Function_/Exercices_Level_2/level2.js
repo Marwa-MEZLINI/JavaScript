@@ -23,9 +23,24 @@ const sumOfPrice = products.reduce(function(accumulator, object)
   console.log(sumOfPrice); 
 
 //(3)
+function categorizeCountries(keyword) {
+    console.log(countries.filter((country) => country.name.includes(keyword)))
+}
+categorizeCountries('stan')
 
+//(4)
+function letterNumber(){
+  const alphaChar = 'ABCDEFGHJKLMNOPQRSTUVWXYZ'
+  const lettercount = []
+  
 
+  for (let i = 0 ; i < (alphaChar.length) ; i++){
+    const letter = countries.filter((item) => item.name.startsWith(alphaChar[i]))
+    lettercount.push({'letter' : alphaChar[i] , 'number' : letter.length + 'times'})
+  }
 
+  return (lettercount)
+}
 
-
+console.log(letterNumber())
 
